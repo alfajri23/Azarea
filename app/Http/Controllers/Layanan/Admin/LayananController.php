@@ -10,6 +10,7 @@ use App\Models\Layanan;
 use App\Models\LayananProgram;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class LayananController extends Controller
 {
@@ -76,6 +77,7 @@ class LayananController extends Controller
 
         $datas = [
             'nama'=>$request->nama,
+            'link'=>Str::slug($request->nama, '-'),
             'desc' => $request->desc,
         ];
 
@@ -126,6 +128,7 @@ class LayananController extends Controller
             'nama'=>$request->nama,
             'id_layanan'=>$request->id_layanan,
             'desc' => $request->desc,
+            'link'=>Str::slug($request->nama, '-'),
         ];
 
 
