@@ -21,8 +21,6 @@ class KontakController extends Controller
             'email' => $request->email,
             'desc' => $request->desc,
             'alamat' => $request->alamat,
-            'ig' => $request->ig,
-            'facebook' => $request->facebook,
             'telepon_1' => $request->tel1,
             'telepon_2' => $request->tel2,
             'telepon_3' => $request->tel3,

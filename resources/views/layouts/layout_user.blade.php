@@ -9,16 +9,16 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>{{isset($title) ? $title : 'Hallo bahagia';}}</title>
+    <title>{{isset($title) ? $title : 'Azariatimur';}}</title>
 
     <!-- Additional CSS Files -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 
-    <meta name="title" content="@yield('meta_title','Hallo bagahia')">
-    <meta name="keywords" content="@yield('meta_keywords','Konsultasi keluarga,Konsultasi hukum,Assessment dan tes')">
-    <meta name="description" content="@yield('meta_description','Konsultasi keluarga,Konsultasi hukum,Assessment dan tes')">
-    <meta name="copyright" content="makinmahir.id">
+    <meta name="title" content="@yield('meta_title','Azariatimur')">
+    <meta name="keywords" content="@yield('meta_keywords','Azariatimur')">
+    <meta name="description" content="@yield('meta_description','Azariatimur')">
+    <meta name="copyright" content="azareatimur.com">
     <meta name="geo.placename" content="indonesia">
     <meta name="geo.country" content="id">
     <meta name="content-language" content="id">

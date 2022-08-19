@@ -201,6 +201,13 @@
                         </a>
                     </li>
 
+                    <li>
+                        <a class="ai-icon" href="{{route('masterBanner')}}" aria-expanded="false">
+                            <i class="la la-calendar"></i>
+                            <span class="nav-text">Promo</span>
+                        </a>
+                    </li>
+
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
                             <i class="la la-graduation-cap"></i>
                             <span class="nav-text">Blog</span>
@@ -219,7 +226,6 @@
                         <ul aria-expanded="false">
                             <li><a href="{{route('masterProgram')}}">Logo</a></li>
                             <li><a href="{{route('masterKontak')}}">Kontak</a></li>
-                            <li><a href="{{route('masterBanner')}}">Banner</a></li>
                             <li><a href="{{route('masterClient')}}">Client</a></li>
                             <li><a href="{{route('masterTestimoni')}}">Testimoni</a></li>
                             <li><a href="{{route('masterTeam')}}">Team</a></li>

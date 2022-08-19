@@ -177,7 +177,7 @@
         <div class="section-head kinder-head my-5">
             <h2 class="text-white mb-3">Find The Best car
                 to your Travel</h2>
-            <button type="button" class="btn btn-primary">Primary</button>
+            <a href="{{route('layananDetail',1)}}" class="btn btn-primary">Pesan sekarang</a>
         </div>
       </div>
     </div>
