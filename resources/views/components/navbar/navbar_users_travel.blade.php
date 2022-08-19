@@ -29,17 +29,13 @@
                 <!-- main nav -->
                 <div class="header-nav navbar-collapse collapse justify-content-center" id="navbarNavDropdown">
                     <div class="logo-header d-md-block d-lg-none">
-                        <a href="index.html"><img src="https://img.freepik.com/free-vector/man-shows-gesture-great-idea_10045-637.jpg?w=740&t=st=1660529666~exp=1660530266~hmac=57efd2e2bfc2f499c71d89c0259fb5c65d3521bd72b49589b423ed9e5546d959" alt=""></a>
+                        Azaria Travel
                     </div>
                     <ul class="nav navbar-nav">	
-                        <li class="{{Request::segment('1') == '' ? '' : ''}} mx-2">
+                        <li class="mx-2">
                             <a class="text-capitalize fw-normal" href="{{route('homeUser')}}">Home</a>
                         </li>
-                        
-                        <li class="{{Request::segment('1') == '' ? '' : ''}} mx-2">
-                            <a class="text-capitalize fw-normal" href="{{route('blogUser')}}">Blog</a>
-                        </li>
-                        
+
                         <li class="mx-2">
                             <a href="javascript:;" class="text-capitalize fw-normal">Layanan<i class="fas fa-chevron-down"></i></a>
                             <ul class="sub-menu">
@@ -51,8 +47,16 @@
                                                 
                             </ul>
                         </li>
+                        
+                        <li class="mx-2">
+                            <a class="text-capitalize fw-normal" href="{{route('blogUser')}}">Blog</a>
+                        </li>
 
-                        <li class="{{Request::segment('1') == 'pendaftaran' ? 'active' : ''}} d-flex align-items-center mx-2">
+                        <li class="mx-2">
+                            <a class="text-capitalize fw-normal" href="{{route('about')}}">Tentang Kami</a>
+                        </li>
+
+                        <li class="d-flex align-items-center mx-2">
                             <div>
 
                                 <a class="btn btn-success" href="{{route('layananDetail',1)}}">Sewa Mobil</a>
