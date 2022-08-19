@@ -5357,12 +5357,12 @@ HOME 5 Box Header
     background-size: 100%;
 }
 .kinder-about-content:before {
-    background-image: url(../images/background/kindergarten/line-bg2.png);
+    /* background-image: url(../images/background/kindergarten/line-bg2.png); */
     bottom: -1px;
     background-position: bottom;
 }
 .kinder-about-content:after {
-    background-image: url(../images/background/kindergarten/line-bg1.png);
+    /* background-image: url(../images/background/kindergarten/line-bg1.png); */
     top: 0;
 }
 .kinder-about-content .about-overlay-box {

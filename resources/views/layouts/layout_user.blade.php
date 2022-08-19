@@ -47,7 +47,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset($favicon)}}">
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef"/>
-    <link rel="apple-touch-icon" href="{{ asset('logo.png') }}">
+    <link rel="apple-touch-icon" sizes="16x16" href="{{ asset('logo.png') }}">
     <link rel="manifest" href="{{ asset('manifest.json') }}">
 
   </head>
