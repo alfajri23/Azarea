@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-12 my-5">
                 <div class="text-black">
-                    <h2 class="title text-center">Amanah Mandiri Finance</h2>
+                    {{-- <h2 class="title text-center">Amanah Mandiri Finance</h2> --}}
                     <div>
                         {!! $data->isi !!}
                     </div>
