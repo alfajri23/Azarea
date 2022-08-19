@@ -52,8 +52,14 @@
                 <div class="col-6 col-sm-3 mx-auto">
                     <div class="features-box style1 m-b30 wow bounceInUp border mx-auto text-dark p-3 pb-5" data-wow-duration="2s" data-wow-delay="0.3s">
                         <div class="dlab-info text-center">
-                            <i class="text-primary ti-car"></i><br>
-                            <span class="fw-bolder">Good Transport</span>
+                            <div>
+
+                              <i class="text-primary ti-car"></i>
+                            </div>
+                            <div>
+
+                              <span class="fw-bolder">Good Transport</span>
+                            </div>
                         </div>
                       </div>
                 </div>

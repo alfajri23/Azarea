@@ -36,11 +36,11 @@ class InformasiController extends Controller
 
     public function about(){
         $title = 'Tentang kami - halobahagia.com';
-        $visi = MasterInformasi::where('nama', 'like', '%Visi Misi%')->first();
+
         $data = MasterInformasi::where('nama', 'like', '%Tentang Kami%')->first();
-        $legalitas = MasterInformasi::where('nama', 'like', '%Legalitas%')->first();
-        $tujuan = MasterInformasi::where('nama', 'like', '%Tujuan%')->first();
-        return view('pages.informasi.term_condition',compact('data','title','visi','legalitas','tujuan'));
+
+
+        return view('pages.informasi.term_condition',compact('data','title'));
     }
 
 }
