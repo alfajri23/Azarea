@@ -1,6 +1,6 @@
 <header class="site-header mo-left header navstyle3">
     <!-- main header -->
-    <div class="sticky-header main-bar-wraper navbar-expand-lg header-transparent">
+    <div class="sticky-header main-bar-wraper navbar-expand-lg {{Request::segment('1') == '' ? 'header-transparent ' : ''}}">
         <div class="main-bar clearfix ">
             <div class="container clearfix">
                 <!-- website logo -->
