@@ -34,10 +34,10 @@
                             <label for="">Foto</label><br>
                             <img src="{{asset($data->foto)}}" class="img-fluid" alt="...">
                         </div>
-                        <div class="col">
+                        {{-- <div class="col">
                             <label for="">Logo</label><br>
                             <img src="{{asset($data->logo)}}" class="img-fluid" alt="...">
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
 

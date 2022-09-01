@@ -33,7 +33,7 @@ class AppServiceProvider extends ServiceProvider
         config(['app.locale'=>'id']);
         Paginator::useBootstrap();
 
-        View()->composer('components.footer.footer_barber', function ($view) {
+        View()->composer('components.footer.footer', function ($view) {
             $data = Cache::remember('footer_data', 7200, function () {
                 return $data = MasterKontak::first();
             });

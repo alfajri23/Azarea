@@ -129,36 +129,29 @@
 <div class="section-full bg-gray content-inner">
     <div class="container">
         <div class="section-head text-center ">
-            <h3 class="title">Layanan Kami</h3>
+            <h3 class="title">Top Destinasi</h3>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
-                <div class="dlab-box m-b30 dlab-team1">
-                    <div class="dlab-media">
-                        <a href="{{route('layananDetail',$layanans[1]->id)}}">
-                            <img width="358" height="460" alt="" class="lozad" data-placeholder-background="white" data-src="{{asset('images/home/layanan-1.png')}}">
+        <div class="row">
+            @forelse ($destinations as $destinasi)  
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow fadeIn" data-wow-delay="0.2s"  data-wow-duration="2s">
+                <div class="icon-bx-wraper sr-iconbox m-b20">
+                    <div class="icon-lg m-b20">
+                        <a href="javascript:void(0);" class="icon-cell">
+                            <img class="rounded lozad" data-placeholder-background="white" data-src="{{$destinasi->foto != null ? asset($destinasi->foto) : 'https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'}}" alt=""/>
                         </a>
                     </div>
-                    <div class="dlab-info pb-5">
-                        <h4 class="dlab-title mb-4"><a href="{{route('layananDetail',$layanans[1]->id)}}">{{$layanans[1]->nama}}</a></h4>
+                    <div class="icon-content text-start">
+                        <p class="mb-3">
+
+                            <i class="ti-map-alt"></i> {{$destinasi->nama}}
+                        </p>
                         
+                        <a href="{{route('layananSubDetail',$destinasi->link)}}" class="btn btn-outline-primary btn-sm">Lihat</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
-                <div class="dlab-box m-b30 dlab-team1">
-                    <div class="dlab-media">
-                        <a href="{{route('layananDetail',$layanans[2]->id)}}">
-                            <img width="358" height="460" alt="" class="lozad" data-placeholder-background="white" data-src="{{asset('images/home/layanan-2.png')}}">
-                        </a>
-                    </div>
-                    <div class="dlab-info pb-5">
-                        <h4 class="dlab-title mb-4"><a href="{{route('layananDetail',$layanans[2]->id)}}">{{$layanans[2]->nama}}</a></h4>
-                        
-                    </div>
-                </div>
-            </div>
-            
+            @empty   
+            @endforelse
         </div>
     </div>
 </div>
@@ -177,7 +170,7 @@
         <div class="section-head kinder-head my-5">
             <h2 class="text-white mb-3">Find The Best car
                 to your Travel</h2>
-            <a href="{{route('layananDetail',1)}}" class="btn btn-primary">Pesan sekarang</a>
+            <a href="{{route('layananDetail',$layanans[0]->link)}}" class="btn btn-primary">Pesan sekarang</a>
         </div>
       </div>
     </div>
@@ -260,14 +253,13 @@
 </div>
 
 <!-- Top destination -->
-<div class="section-full bg-white content-inner-1 text-center">
+<div class="section-full bg-white content-inner-1 text-center mb-5">
     <div class="container">
         <div class="section-head kinder-head">
-            <h3 class="fw-bolder">Top Destinasi</h3>
+            <h3 class="fw-bolder">Layanan Kami</h3>
         </div>
         <div class="row">
-            @forelse ($destinations as $destinasi)
-                
+            @forelse ($destinations as $destinasi)  
             <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow fadeIn" data-wow-delay="0.2s"  data-wow-duration="2s">
                 <div class="icon-bx-wraper sr-iconbox m-b20">
                     <div class="icon-lg m-b20">
@@ -281,14 +273,20 @@
                             <i class="ti-map-alt"></i> {{$destinasi->nama}}
                         </p>
                         
-                        <a href="{{route('layananSubDetail',$destinasi->id)}}" class="btn btn-outline-primary">Cek</a>
+                        <a href="{{route('layananSubDetail',$destinasi->link)}}" class="btn btn-outline-primary btn-sm">Lihat</a>
                     </div>
                 </div>
             </div>
-            @empty
-                
+            @empty   
             @endforelse
-
+            <div class="text-center">
+                <p>
+                    <a class="text-primary" href="{{route('layananDetail',$layanans[1]->link)}}">
+                        Lihat selengkapnya
+                    </a>
+                    
+                </p>
+            </div>
         </div>
     </div>
 </div>

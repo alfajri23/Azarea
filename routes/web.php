@@ -40,8 +40,8 @@ Route::get('/pendaftaran', [ Controllers\Pendaftaran\User\PendaftaranUserControl
 Route::post('/pendaftaran', [ Controllers\Pendaftaran\User\PendaftaranUserController::class,'store'])->name('pendaftaranStore');
 
 //* LAYANAN
-Route::get('/layanan/{id}', [ Controllers\Layanan\User\LayananUserController::class,'detail_layanan'])->name('layananDetail');
-Route::get('/layanan/sub/{id}', [ Controllers\Layanan\User\LayananUserController::class,'detail_sub_layanan'])->name('layananSubDetail');
+Route::get('/layanan/{link}', [ Controllers\Layanan\User\LayananUserController::class,'detail_layanan'])->name('layananDetail');
+Route::get('/layanan/sub/{link}', [ Controllers\Layanan\User\LayananUserController::class,'detail_sub_layanan'])->name('layananSubDetail');
 
 Route::prefix('blog')->group(function(){
     Route::get('/', [ Controllers\Blog\User\BlogUserController::class,'index'])->name('blogUser');
