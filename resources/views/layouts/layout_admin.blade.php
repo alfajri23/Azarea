@@ -9,12 +9,12 @@
 	<meta name="author" content="" />
 	<meta name="robots" content="" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="description" content="EduZone - Bootstrap Admin Dashboard" />
-	<meta property="og:title" content="EduZone - Bootstrap Admin Dashboard" />
-	<meta property="og:description" content="EduZone - Bootstrap Admin Dashboard" />
+	<meta name="description" content="Admin - Azareatimur" />
+	<meta property="og:title" content="Admin - Azareatimur" />
+	<meta property="og:description" content="Admin - Azareatimur" />
 	<meta property="og:image" content="https://eduzone.dexignzone.com/xhtml/social-image.png" />
 	<meta name="format-detection" content="telephone=no">
-    <title>EduZone - Bootstrap Admin Dashboard </title>
+    <title>Admin - Azareatimur </title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon1.png">
     {{-- <link rel="stylesheet" href="vendor/jqvmap/css/jqvmap.min.css"> --}}
@@ -274,7 +274,7 @@
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <a href="#" target="_blank">DexignZone</a> 2022</p>
+                <p>Copyright © Designed &amp; Developed by <a href="#" target="_blank">PT Bumi Tekno Indonesia</a> 2022</p>
             </div>
         </div>
         <!--**********************************

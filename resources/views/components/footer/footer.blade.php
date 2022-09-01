@@ -1,11 +1,11 @@
 <!-- Footer -->
 <footer class="site-footer">
-    <div class="footer-top overlay-black-light" style="background-image:url(images/background/bg9.jpg);">
+    <div class="footer-top bg-dark">
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-4">
             <div class="widget">
-              <img class="bg-white p-3 mb-2" src="{{asset($logo)}}" alt="" width="140"/>
+              <img class="p-3 mb-2" src="{{asset($logo)}}" alt="" width="240"/>
               
               <p class="text-capitalize m-b20">{{$data->desc}}</p>
               
@@ -100,7 +100,7 @@
       </div>
     </div>
     <!-- footer bottom part -->
-    <div class="footer-bottom">
+    <div class="footer-bottom bg-dark">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-6 text-left "> <span>Copyright © 2022 PT Bumi Tekno Indonesia</span> </div>

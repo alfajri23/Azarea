@@ -72,7 +72,6 @@
   {{-- @include('components.floating_button.floating_button') --}}
 
 
-    {{-- @include('components.footer.footer_user') --}}
     @include('components.footer.footer')
 
 
