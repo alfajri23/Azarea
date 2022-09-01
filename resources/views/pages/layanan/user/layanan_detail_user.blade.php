@@ -36,7 +36,7 @@
                             </p>
                             
                            
-                            <a href="{{route('layananSubDetail',$dt->id)}}" class="btn btn-outline-primary">Cek</a>
+                            <a href="{{route('layananSubDetail',$dt->link)}}" class="btn btn-outline-primary">Cek</a>
                         </div>
                     </div>
                 </div> 

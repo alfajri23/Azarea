@@ -5,7 +5,8 @@
         <div class="row">
           <div class="col-12 col-sm-4">
             <div class="widget">
-              <h5 class="m-b30 text-white">{{$data->nama}}</h5>
+              <img class="bg-white p-3 mb-2" src="{{asset($logo)}}" alt="" width="140"/>
+              
               <p class="text-capitalize m-b20">{{$data->desc}}</p>
               
               <ul class="list-inline m-a0">
@@ -102,14 +103,14 @@
     <div class="footer-bottom">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-sm-6 text-left "> <span>Copyright © 2022 DexignZone</span> </div>
+          <div class="col-md-6 col-sm-6 text-left "> <span>Copyright © 2022 PT Bumi Tekno Indonesia</span> </div>
           <div class="col-md-6 col-sm-6 text-right "> 
             <div class="widget-link "> 
-              <ul>
+              {{-- <ul>
                 <li><a href="javascript:void(0);"> About</a></li> 
                 <li><a href="javascript:void(0);"> Help Desk</a></li> 
                 <li><a href="javascript:void(0);"> Privacy Policy</a></li> 
-              </ul>
+              </ul> --}}
             </div>
           </div>
         </div>

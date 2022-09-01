@@ -73,7 +73,7 @@
 
 
     {{-- @include('components.footer.footer_user') --}}
-    @include('components.footer.footer_barber')
+    @include('components.footer.footer')
 
 
     <script src="{{ asset('js/user/plugin.js') }}"></script>
