@@ -1,14 +1,14 @@
 <header class="site-header mo-left header navstyle3">
     <!-- main header -->
-    <div class="sticky-header main-bar-wraper navbar-expand-lg {{Request::segment('1') == '' ? 'header-transparent ' : ''}}">
+    <div class="sticky-header main-bar-wraper navbar-expand-lg ">
         <div class="main-bar clearfix ">
             <div class="container clearfix">
                 <!-- website logo -->
-                <div class="logo-header mostion logo-white d-block d-sm-none">
-                    <img class="pt-3" src="{{asset($data)}}" alt="" style="width:120px !important "/>
+                <div class="logo-header mostion logo-white">
+                    <img class="pt-3" src="{{asset($data)}}" alt="" style="max-width: 140px !important;"/>
                 </div>
                 <!-- nav toggle button -->
-                <button class="navbar-toggler collapsed navicon justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -27,14 +27,14 @@
                     </form>
                 </div>
                 <!-- main nav -->
-                <div class="header-nav navbar-collapse collapse justify-content-center" id="navbarNavDropdown">
+                <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                     {{-- <div class="logo-header d-md-block d-lg-none">
                         Azaria Travel
                     </div> --}}
                     <ul class="nav navbar-nav">	
-                        <li class="mx-2">
-                            <img class="p-3 mb-2" src="{{asset($data)}}" alt="" width="150"/>
-                        </li>
+                        {{-- <li class="mx-2">
+                            <img class="" src="{{asset($data)}}" alt="" width="150"/>
+                        </li> --}}
 
                         <li class="mx-2">
                             <a class="text-capitalize fw-normal" href="{{route('homeUser')}}">Home</a>
@@ -61,7 +61,7 @@
                         <li class="d-flex align-items-center mx-2">
                             <div>
 
-                                <a class="btn btn-success" href="{{route('layananDetail',$layanans[0]->link)}}">Sewa Mobil</a>
+                                <a class="btn btn-transparent" href="{{route('layananDetail',$layanans[0]->link)}}">Sewa Mobil</a>
                             </div>
                         </li>
                     </ul>	
