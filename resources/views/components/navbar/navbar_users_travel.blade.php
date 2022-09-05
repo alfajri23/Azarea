@@ -31,7 +31,7 @@
                     {{-- <div class="logo-header d-md-block d-lg-none">
                         Azaria Travel
                     </div> --}}
-                    <ul class="nav navbar-nav pt-5">	
+                    <ul class="nav navbar-nav">	
                         {{-- <li class="mx-2">
                             <img class="" src="{{asset($data)}}" alt="" width="150"/>
                         </li> --}}
