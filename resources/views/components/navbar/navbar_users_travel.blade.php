@@ -5,7 +5,7 @@
             <div class="container clearfix">
                 <!-- website logo -->
                 <div class="logo-header mostion logo-white">
-                    <img class="pb-3 pb-sm-0 " src="{{asset($data)}}" alt="" style="max-width: 140px !important;"/>
+                    <img class="pt-3 pt-sm-0 " src="{{asset($data)}}" alt="" style="max-width: 140px !important;"/>
                 </div>
                 <!-- nav toggle button -->
                 <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
                     {{-- <div class="logo-header d-md-block d-lg-none">
                         Azaria Travel
                     </div> --}}
-                    <ul class="nav navbar-nav">	
+                    <ul class="nav navbar-nav pt-5">	
                         {{-- <li class="mx-2">
                             <img class="" src="{{asset($data)}}" alt="" width="150"/>
                         </li> --}}
