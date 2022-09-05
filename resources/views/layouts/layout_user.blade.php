@@ -57,9 +57,7 @@
 
   <!-- ***** Header Area Start ***** -->
 
-  {{-- @include('components.navbar.navbar_users_koperasi') --}}
   @include('components.navbar.navbar_users_travel')
-  {{-- @include('components.navbar.navbar_users_food') --}}
 
   <!-- ***** Header Area End ***** -->
 

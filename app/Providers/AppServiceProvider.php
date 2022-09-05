@@ -66,7 +66,7 @@ class AppServiceProvider extends ServiceProvider
                 return $data->foto;
             });
 
-            $layanans = Layanan::where('id','!=',1)->get();
+            $layanans = Layanan::latest()->get();
             $view->with([
                 'data'=>$data,
                 'layanans' => $layanans
