@@ -5,7 +5,8 @@
         <div class="row">
           <div class="col-12 col-sm-4">
             <div class="widget">
-              <img class="p-3 mb-2" src="{{asset($logo)}}" alt="" width="240"/>
+              {{-- <img class="p-3 mb-2" src="{{asset($logo)}}" alt="" width="240"/> --}}
+              <h3 class="text-capitalize">{{$data->nama}}</h3>
               
               <p class="text-capitalize m-b20">{{$data->desc}}</p>
               

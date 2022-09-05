@@ -4,8 +4,8 @@
         <div class="main-bar clearfix ">
             <div class="container clearfix">
                 <!-- website logo -->
-                 <div class="logo-header mostion logo-white d-none">
-                    <a href="index.html"><img src="images/logo-white-3.png" alt=""></a>
+                <div class="logo-header mostion logo-white">
+                    <img class="pt-3" src="{{asset($data)}}" alt="" style="width:120px !important "/>
                 </div>
                 <!-- nav toggle button -->
                 <button class="navbar-toggler collapsed navicon justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,10 +28,14 @@
                 </div>
                 <!-- main nav -->
                 <div class="header-nav navbar-collapse collapse justify-content-center" id="navbarNavDropdown">
-                    <div class="logo-header d-md-block d-lg-none">
+                    {{-- <div class="logo-header d-md-block d-lg-none">
                         Azaria Travel
-                    </div>
+                    </div> --}}
                     <ul class="nav navbar-nav">	
+                        <li class="mx-2">
+                            <img class="p-3 mb-2" src="{{asset($data)}}" alt="" width="150"/>
+                        </li>
+
                         <li class="mx-2">
                             <a class="text-capitalize fw-normal" href="{{route('homeUser')}}">Home</a>
                         </li>
@@ -40,11 +44,9 @@
                             <a href="javascript:;" class="text-capitalize fw-normal">Layanan<i class="fas fa-chevron-down"></i></a>
                             <ul class="sub-menu">
                                 @forelse ($layanans as $layanan)
-                                <li><a href="{{route('layananDetail',$layanan->id)}}">{{$layanan->nama}}</a></li>
+                                <li><a href="{{route('layananDetail',$layanan->link)}}">{{$layanan->nama}}</a></li>
                                 @empty
-                                    
-                                @endforelse
-                                                
+                                @endforelse                  
                             </ul>
                         </li>
                         
@@ -59,7 +61,7 @@
                         <li class="d-flex align-items-center mx-2">
                             <div>
 
-                                <a class="btn btn-success" href="{{route('layananDetail',1)}}">Sewa Mobil</a>
+                                <a class="btn btn-success" href="{{route('layananDetail',$layanans[0]->link)}}">Sewa Mobil</a>
                             </div>
                         </li>
                     </ul>	
