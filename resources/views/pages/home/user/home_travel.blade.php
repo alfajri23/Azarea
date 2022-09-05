@@ -33,7 +33,7 @@
                 <h2 class="head-title text-white mb-3">Life is short and the world is wide</h2>
                 <p class="text-white">Nikmati petualangan terhebatmu dan jelajahi seluruh indonesia bersama kami sekarang juga </p>
                 <div>
-                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn text-white" style="background-color: #E38B68">Primary</button>
                 </div>
             </div>
             </div>
@@ -210,7 +210,7 @@
             <div class="col-10 col-sm-3 mx-auto">
                 <div class="features-box style1 m-b30 wow bounceInUp border mx-auto text-dark" data-wow-duration="2s" data-wow-delay="0.3s">
                     <div class="dlab-info text-start">
-                        <i class="text-primary fas fa-hamburger"></i><br>
+                        <i class="text-primary fas fa-hamburger mb-0"></i><br>
                         <span class="fw-bolder">Good Food</span>
                         <p class="">Hallo</p>
                     </div>

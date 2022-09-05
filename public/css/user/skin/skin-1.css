@@ -384,7 +384,8 @@ button.scroltop {
 }
 /* secondry color */
 .text-secondry {
-	color: #219ebc;
+	/* color: #219ebc; */
+	color: #E38B68;
 }
 .item-info-in,
 .header-transparent.is-fixed .main-bar,
@@ -396,7 +397,7 @@ button.scroltop {
 .footer-bottom,
 .site-button-secondry,
 .top-bar{
-	background-color:#219ebc;
+	background-color:#E38B68;
 }
 
 
