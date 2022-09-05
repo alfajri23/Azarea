@@ -4,7 +4,7 @@
         <div class="main-bar clearfix ">
             <div class="container clearfix">
                 <!-- website logo -->
-                <div class="logo-header mostion logo-white">
+                <div class="logo-header mostion logo-white d-block d-sm-none">
                     <img class="pt-3" src="{{asset($data)}}" alt="" style="width:120px !important "/>
                 </div>
                 <!-- nav toggle button -->
