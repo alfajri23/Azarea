@@ -13,10 +13,13 @@
     .desc>p{
       margin-bottom: 5px;
     }
+
+
+
 </style>
 
 <div class="page-content bg-gray">
-    <div class="container p-3">
+    <div class="container">
         <div class="row">
             <div class="col-12 col-sm-10 mx-auto my-5">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">

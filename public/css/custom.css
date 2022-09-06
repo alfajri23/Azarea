@@ -86,6 +86,12 @@ body{
     color: #0C9;
 }
 
+@media screen and (min-width: 767px) { 
+    .container{
+        width: 95%;
+    }
+}
+
 @media screen and (min-width: 960px) { 
     .font-title{
         font-size: 55px;
