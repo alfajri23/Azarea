@@ -79,6 +79,8 @@ class LayananController extends Controller
             'nama'=>$request->nama,
             'link'=>Str::slug($request->nama, '-'),
             'desc' => $request->desc,
+            'link_tombol' => $request->link_tombol,
+            'nama_tombol' => $request->nama_tombol,
         ];
 
         if(!empty($request->foto)){
@@ -129,6 +131,8 @@ class LayananController extends Controller
             'id_layanan'=>$request->id_layanan,
             'desc' => $request->desc,
             'link'=>Str::slug($request->nama, '-'),
+            'link_tombol' => $request->link_tombol,
+            'nama_tombol' => $request->nama_tombol,
         ];
 
 
