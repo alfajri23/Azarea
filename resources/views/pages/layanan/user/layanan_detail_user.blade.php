@@ -30,13 +30,14 @@
                             </a>
                         </div>
                         <div class="icon-content text-start">
-                            <p class="mb-3 text-dark">
+                            <p class="mb-3 text-dark fw-bolder">
 
-                                <i class="ti-map-alt"></i> {{$dt->nama}}
+                                {{-- <i class="ti-map-alt"></i>  --}}
+                                {{$dt->nama}}
                             </p>
                             
                            
-                            <a href="{{route('layananSubDetail',$dt->link)}}" class="btn btn-outline-primary">Cek</a>
+                            <a href="{{route('layananSubDetail',$dt->link)}}" class="btn btn-sm btn-outline-primary">Lihat selengkapnya</a>
                         </div>
                     </div>
                 </div> 
