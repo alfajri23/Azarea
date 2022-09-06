@@ -51,12 +51,12 @@
                     <div class="row">
                         <div class="col">
                             <label for="">Nama tombol</label>
-                            <input type="text" class="form-control" >
+                            <input type="text" class="form-control" name="nama_tombol" >
                             <div class="form-text text-primary">Nama tombol</div>
                         </div>
                         <div class="col">
                             <label for="">Link tombol</label>
-                            <input type="text" class="form-control" >
+                            <input type="text" class="form-control" name="link_tombol" >
                             <div class="form-text text-primary">Link tombol</div>
                         </div>
                     </div>

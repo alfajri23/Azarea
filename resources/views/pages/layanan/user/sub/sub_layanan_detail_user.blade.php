@@ -14,7 +14,7 @@
 <div class="page-content bg-gray">
     <div class="container p-3">
         <div class="row">
-            <div class="my-5">
+            <div class="col-12 col-sm-10 mx-auto my-5">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -158,7 +158,7 @@
                 <h3 class="title">{{$data->nama}}</h3>
                 <div>{!!$data->desc!!}</div> 
 
-                <a href="{{$data->link_tombol}}" class="btn btn-info">{{$data->nama_tombol !== null ? $data->nama_tombol : 'Pesan sekarang'}}</a>
+                <a href="{{$data->link_tombol}}?text=Saya%20ingin%20menyetahui%20lebih%20lanjut%20layanan%20{{$data->nama}}" class="btn btn-info">{{$data->nama_tombol !== null ? $data->nama_tombol : 'Pesan sekarang'}}</a>
             </div>
 
             

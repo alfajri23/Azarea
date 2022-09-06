@@ -58,12 +58,12 @@
                     <div class="row">
                         <div class="col">
                             <label for="">Nama tombol</label>
-                            <input type="text" class="form-control" >
+                            <input type="text" name="nama_tombol" class="form-control" >
                             <div class="form-text text-primary">Nama tombol</div>
                         </div>
                         <div class="col">
                             <label for="">Link tombol</label>
-                            <input type="text" class="form-control" >
+                            <input type="text" name="link_tombol" class="form-control" >
                             <div class="form-text text-primary">Link tombol</div>
                         </div>
                     </div>
