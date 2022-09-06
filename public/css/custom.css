@@ -86,7 +86,8 @@ body{
     color: #0C9;
 }
 
-@media screen and (min-width: 767px) { 
+@media screen and (max-width: 767px) { 
+
     .container{
         width: 95%;
     }
