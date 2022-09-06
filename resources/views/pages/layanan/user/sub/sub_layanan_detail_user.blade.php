@@ -22,8 +22,11 @@
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      @forelse ($galeris as $galeri)
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{$loop->iteration}}" aria-label="Slide {{$loop->iteration+1}}"></button>
+                      @empty
+                      @endforelse
+
                     </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -162,7 +165,7 @@
                 <h3 class="title mb-3">{{$data->nama}}</h3>
                 <div class="desc">{!!$data->desc!!}</div> 
 
-                <a href="{{$data->link_tombol}}?text=Saya%20ingin%20menyetahui%20lebih%20lanjut%20layanan%20{{$data->nama}}" class="btn btn-success">{{$data->nama_tombol !== null ? $data->nama_tombol : 'Pesan sekarang'}}</a>
+                <a href="{{$data->link_tombol}}?text=Saya%20ingin%20menyetahui%20lebih%20lanjut%20layanan%20{{$data->nama}}" class="btn btn-success mt-4">{{$data->nama_tombol !== null ? $data->nama_tombol : 'Pesan sekarang'}}</a>
             </div>
 
             
