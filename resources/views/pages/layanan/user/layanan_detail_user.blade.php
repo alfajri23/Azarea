@@ -22,7 +22,7 @@
             
             <div class="row">
                 @forelse ($subs as $dt)
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow fadeIn" data-wow-delay="0.2s"  data-wow-duration="2s">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow fadeIn my-4" data-wow-delay="0.2s"  data-wow-duration="2s">
                     <div class="icon-bx-wraper sr-iconbox m-b20">
                         <div class="icon-lg m-b20">
                             <a href="javascript:void(0);" class="icon-cell">
