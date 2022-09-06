@@ -9,6 +9,10 @@
         color: black !important;
         position: relative;
     }
+
+    .desc>p{
+      margin-bottom: 5px;
+    }
 </style>
 
 <div class="page-content bg-gray">
@@ -155,10 +159,10 @@
 
             <div class="section-head text-black">
                 
-                <h3 class="title">{{$data->nama}}</h3>
-                <div>{!!$data->desc!!}</div> 
+                <h3 class="title mb-3">{{$data->nama}}</h3>
+                <div class="desc">{!!$data->desc!!}</div> 
 
-                <a href="{{$data->link_tombol}}?text=Saya%20ingin%20menyetahui%20lebih%20lanjut%20layanan%20{{$data->nama}}" class="btn btn-info">{{$data->nama_tombol !== null ? $data->nama_tombol : 'Pesan sekarang'}}</a>
+                <a href="{{$data->link_tombol}}?text=Saya%20ingin%20menyetahui%20lebih%20lanjut%20layanan%20{{$data->nama}}" class="btn btn-success">{{$data->nama_tombol !== null ? $data->nama_tombol : 'Pesan sekarang'}}</a>
             </div>
 
             
