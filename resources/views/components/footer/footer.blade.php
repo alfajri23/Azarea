@@ -24,17 +24,7 @@
             <div class="footer-contact-info service-box-slide text-white">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
-                      <div class="icon-bx-wraper bx-style-1 p-a20 radius-sm br-col-w1">
-                        <div class="icon-content">
-                          <h5 class="dlab-tilte">
-                            <span class="icon-sm"><i class="ti-location-pin"></i></span> 
-                            Mon
-                          </h5>
-                          <p class="op7">12.00 - 14.00</p>
-                        </div>
-                      </div>
-                    </div>
+                    
                     <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
                         <div class="icon-bx-wraper bx-style-1 p-a20 radius-sm br-col-w1">
                           <div class="icon-content">
@@ -51,7 +41,7 @@
                           <div class="icon-content">
                             <h5 class="dlab-tilte">
                               <span class="icon-sm"><i class="ti-location-pin"></i></span> 
-                              Mon
+                              Tue
                             </h5>
                             <p class="op7">12.00 - 14.00</p>
                           </div>
@@ -65,7 +55,7 @@
                         <div class="icon-content">
                           <h5 class="dlab-tilte">
                             <span class="icon-sm"><i class="ti-location-pin"></i></span> 
-                            Mon
+                            Wed
                           </h5>
                           <p class="op7">12.00 - 14.00</p>
                         </div>
@@ -76,7 +66,7 @@
                           <div class="icon-content">
                             <h5 class="dlab-tilte">
                               <span class="icon-sm"><i class="ti-location-pin"></i></span> 
-                              Mon
+                              Thu
                             </h5>
                             <p class="op7">12.00 - 14.00</p>
                           </div>
@@ -87,11 +77,22 @@
                           <div class="icon-content">
                             <h5 class="dlab-tilte">
                               <span class="icon-sm"><i class="ti-location-pin"></i></span> 
-                              Mon
+                              Fry
                             </h5>
                             <p class="op7">12.00 - 14.00</p>
                           </div>
                         </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+                      <div class="icon-bx-wraper bx-style-1 p-a20 radius-sm br-col-w1">
+                        <div class="icon-content">
+                          <h5 class="dlab-tilte">
+                            <span class="icon-sm"><i class="ti-location-pin"></i></span> 
+                            Sat
+                          </h5>
+                          <p class="op7">12.00 - 14.00</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
