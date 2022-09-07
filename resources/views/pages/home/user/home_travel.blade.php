@@ -33,7 +33,7 @@
                 <h2 class="head-title text-white mb-3">Life is short and the world is wide</h2>
                 <p class="text-white">Nikmati petualangan terhebatmu dan jelajahi seluruh indonesia bersama kami sekarang juga </p>
                 <div>
-                    <button type="button" class="btn text-white" style="background-color: #E38B68">Primary</button>
+                    <a href="#paket" type="button" class="btn text-white" style="background-color: #E38B68">Explore More</a>
                 </div>
             </div>
             </div>
@@ -98,7 +98,7 @@
                         <span> 
                             <h6>
                                 <i class="ti-headphone-alt fs-3  me-2 text-primary"></i>
-                                Customer Support 24/7
+                                More than 1000++ Customer
                             </h6>
                         </span>
                     </div>
@@ -106,7 +106,7 @@
                         <span> 
                             <h6>
                                 <i class="ti-headphone-alt fs-3  me-2 text-primary"></i>
-                                Customer Support 24/7
+                                Since 2010 boarding
                             </h6>
                         </span>
                     </div>
@@ -126,7 +126,7 @@
 </div>
 
 <!-- Top destination -->
-<div class="section-full bg-white content-inner-1 text-center py-5">
+<div id="paket" class="section-full bg-white content-inner-1 text-center py-5">
     <div class="container">
         <div class="section-head kinder-head">
             <h3 class="fw-bolder">Paket Kami</h3>
@@ -154,7 +154,7 @@
             @endforelse
             <div class="text-center">
                 <p>
-                    <a class="text-primary" href="{{route('layananDetail',$layanans[1]->link)}}">
+                    <a class="text-primary" style="cursor: pointer;" href="{{route('layananDetail',$layanans[1]->link)}}">
                         Lihat selengkapnya
                     </a>
                     
@@ -251,7 +251,7 @@
 </div>
 
 {{-- Paralax dewata --}}
-<div class="section-full bg-white content-inner-2 kinder-about-content py-5" 
+<div class="section-full bg-white content-inner-2 kinder-about-content my-5" 
     style="
     background-image:url({{asset('images/home/paralax-dewata.png')}});
     background-size: 100%;
@@ -281,8 +281,8 @@
             @forelse ($mobils as $mobil)  
             <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-4 wow fadeIn" data-wow-delay="0.2s"  data-wow-duration="2s">
                 <div class="icon-bx-wraper sr-iconbox m-b20">
-                    <div class="icon-lg mb-1">
-                        <a href="javascript:void(0);" class="icon-cell">
+                    <div class="icon-lg mb-1 p-4">
+                        <a href="{{route('layananSubDetail',$mobil->link)}}" class="icon-cell">
                             <img class="rounded lozad" data-placeholder-background="white" data-src="{{$mobil->foto != null ? asset($mobil->foto) : 'https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'}}" alt=""/>
                         </a>
                     </div>
@@ -300,7 +300,7 @@
             @endforelse
             <div class="text-center">
                 <p>
-                    <a class="text-primary" href="{{route('layananDetail',$layanans[1]->link)}}">
+                    <a class="text-primary" style="cursor: pointer;" href="{{route('layananDetail',$layanans[1]->link)}}">
                         Lihat selengkapnya
                     </a>
                     

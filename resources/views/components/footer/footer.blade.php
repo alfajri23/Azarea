@@ -104,16 +104,8 @@
     <div class="footer-bottom bg-dark">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-sm-6 text-left "> <span>Copyright © 2022 PT Bumi Tekno Indonesia</span> </div>
-          <div class="col-md-6 col-sm-6 text-right "> 
-            <div class="widget-link "> 
-              {{-- <ul>
-                <li><a href="javascript:void(0);"> About</a></li> 
-                <li><a href="javascript:void(0);"> Help Desk</a></li> 
-                <li><a href="javascript:void(0);"> Privacy Policy</a></li> 
-              </ul> --}}
-            </div>
-          </div>
+          <div class="text-center"> <span>Copyright © 2022 PT Bumi Tekno Indonesia</span> </div>
+          
         </div>
       </div>
     </div>
