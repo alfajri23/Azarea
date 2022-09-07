@@ -43,7 +43,7 @@
 </div>
 
 {{-- Promo --}}
-<div class="section-full dlab-we-find bg-img-fix p-t20 p-b20 bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+<div class="section-full dlab-we-find bg-img-fix py-5 bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
     <div class="container">
         <div class="section-content">
             <div class="section-head text-center mt-0 mt-sm-4">
@@ -187,8 +187,8 @@
 </div>
 
 {{-- What we ooffer --}}
-<div class="section-full content-inner bg-gray py-5">
-    <div class="container">
+<div class="section-full content-inner bg-gray py-5 mt-4">
+    <div class="container mt-5">
       <div class="section-head text-black text-center">
         <h3 class="title">What we over</h3>
       </div>
@@ -262,7 +262,7 @@
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12 col-12"></div>
       <div class="col-lg-6 col-md-12 col-sm-12 col-12 wow fadeIn" data-wow-delay="0.2s"  data-wow-duration="2s">
-        <div class="section-head kinder-head">
+        <div class="section-head kinder-head text-center text-sm-start">
           <h2 class="head-title text-yellow"></h2>
           <p class="text-white"></p>
         </div>
