@@ -98,7 +98,7 @@
                         <span> 
                             <h6>
                                 <i class="ti-headphone-alt fs-3  me-2 text-primary"></i>
-                                More than 1000++ Customer
+                                1000++ Customer
                             </h6>
                         </span>
                     </div>
