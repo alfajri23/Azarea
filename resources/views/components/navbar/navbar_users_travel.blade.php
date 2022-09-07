@@ -5,7 +5,10 @@
             <div class="container clearfix">
                 <!-- website logo -->
                 <div class="logo-header mostion logo-white">
-                    <img class="pt-3 pt-sm-0 " src="{{asset($data)}}" alt="" style="max-width: 140px !important;"/>
+                    <a href="/">
+
+                        <img class="pt-3 pt-sm-0 " src="{{asset($data)}}" alt="" style="max-width: 140px !important;"/>
+                    </a>
                 </div>
                 <!-- nav toggle button -->
                 <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
