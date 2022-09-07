@@ -70,7 +70,7 @@
 
 
 <!-- Content Section -->
-<div class="section-full content-inner bg-white">
+<div class="section-full content-inner bg-white py-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12 m-b30 about-two align-self-start">
@@ -126,7 +126,7 @@
 </div>
 
 <!-- Top destination -->
-<div class="section-full bg-white content-inner-1 text-center mb-5">
+<div class="section-full bg-white content-inner-1 text-center py-5">
     <div class="container">
         <div class="section-head kinder-head">
             <h3 class="fw-bolder">Paket Kami</h3>
@@ -141,9 +141,9 @@
                         </a>
                     </div>
                     <div class="icon-content text-start">
-                        <p class="mb-3">
+                        <p class="mb-3 text-dark">
 
-                            <i class="ti-map-alt"></i> {{$destinasi->nama}}
+                            {{$destinasi->nama}}
                         </p>
                         
                         <a href="{{route('layananSubDetail',$destinasi->link)}}" class="btn btn-outline-primary btn-sm mt-3">Lihat Selengkapnya</a>
@@ -177,8 +177,8 @@
         </div>
       <div class="col-sm-5 col-11 wow fadeIn text-end text-sm-start" data-wow-delay="0.2s"  data-wow-duration="2s">
         <div class="section-head kinder-head my-5">
-            <h2 class="text-white mb-3">Find The Best car
-                to your Travel</h2>
+            <h2 class="text-white mb-3">Find the Best Car
+                to Your Travel</h2>
             <a href="{{route('layananDetail',$layanans[0]->link)}}" class="btn btn-primary">Pesan sekarang</a>
         </div>
       </div>
@@ -187,7 +187,7 @@
 </div>
 
 {{-- What we ooffer --}}
-<div class="section-full content-inner bg-gray">
+<div class="section-full content-inner bg-gray py-5">
     <div class="container">
       <div class="section-head text-black text-center">
         <h3 class="title">What we over</h3>
@@ -251,7 +251,7 @@
 </div>
 
 {{-- Paralax dewata --}}
-<div class="section-full bg-white content-inner-2 kinder-about-content" 
+<div class="section-full bg-white content-inner-2 kinder-about-content py-5" 
     style="
     background-image:url({{asset('images/home/paralax-dewata.png')}});
     background-size: 100%;
@@ -272,7 +272,7 @@
 </div>
 
 <!-- Moibl -->
-<div class="section-full bg-white content-inner-1 text-center mb-5">
+<div class="section-full bg-white content-inner-1 text-center py-5">
     <div class="container">
         <div class="section-head kinder-head">
             <h3 class="fw-bolder">Sewa Mobil</h3>
@@ -287,9 +287,9 @@
                         </a>
                     </div>
                     <div class="icon-content text-start">
-                        <p class="mb-3">
+                        <p class="mb-3 text-dark">
 
-                            <i class="ti-map-alt"></i> {{$mobil->nama}}
+                            {{$mobil->nama}}
                         </p>
                         
                         <a href="{{route('layananSubDetail',$mobil->link)}}" class="btn btn-outline-primary btn-sm mt-3">Lihat Selengkapnya</a>
@@ -311,7 +311,7 @@
 </div>
 
 <!-- Testimonials Style 11 -->
-<div class="section-full bg-gray content-inner">
+<div class="section-full bg-gray content-inner py-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -349,7 +349,7 @@
 </div>
 
 <!-- Latest blog -->
-<div class="section-full content-inner bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+<div class="section-full content-inner bg-gray py-5 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
     <div class="container">
         <div class="section-head text-center">
             <h3 class="fw-bolder">Blog Kami</h3>
