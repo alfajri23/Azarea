@@ -125,15 +125,15 @@
     </div>
 </div>
 
-{{-- Layanan --}}
-<div class="section-full bg-gray content-inner">
+<!-- Top destination -->
+<div class="section-full bg-white content-inner-1 text-center mb-5">
     <div class="container">
-        <div class="section-head text-center ">
-            <h3 class="title">Top Destinasi</h3>
+        <div class="section-head kinder-head">
+            <h3 class="fw-bolder">Paket Kami</h3>
         </div>
         <div class="row">
             @forelse ($destinations as $destinasi)  
-            <div class="col-lg-3 col-md-6 col-sm-6 col-6 wow fadeIn" data-wow-delay="0.2s"  data-wow-duration="2s">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-4 wow fadeIn" data-wow-delay="0.2s"  data-wow-duration="2s">
                 <div class="icon-bx-wraper sr-iconbox m-b20">
                     <div class="icon-lg mb-1">
                         <a href="javascript:void(0);" class="icon-cell">
@@ -141,20 +141,29 @@
                         </a>
                     </div>
                     <div class="icon-content text-start">
-                        <p class="mb-3 text-dark">
+                        <p class="mb-3">
 
-                           {{$destinasi->nama}}
+                            <i class="ti-map-alt"></i> {{$destinasi->nama}}
                         </p>
                         
-                        <a href="{{route('layananSubDetail',$destinasi->link)}}" class="btn btn-outline-primary btn-sm">Lihat Selengkapnya</a>
+                        <a href="{{route('layananSubDetail',$destinasi->link)}}" class="btn btn-outline-primary btn-sm mt-3">Lihat Selengkapnya</a>
                     </div>
                 </div>
             </div>
             @empty   
             @endforelse
+            <div class="text-center">
+                <p>
+                    <a class="text-primary" href="{{route('layananDetail',$layanans[1]->link)}}">
+                        Lihat selengkapnya
+                    </a>
+                    
+                </p>
+            </div>
         </div>
     </div>
 </div>
+
 
 {{-- Paralax mobil --}}
 <div class="section-full bg-white content-inner-2 kinder-about-content py-5 paralax-fix lozad" 
@@ -262,28 +271,28 @@
   </div>
 </div>
 
-<!-- Top destination -->
+<!-- Moibl -->
 <div class="section-full bg-white content-inner-1 text-center mb-5">
     <div class="container">
         <div class="section-head kinder-head">
-            <h3 class="fw-bolder">Layanan Kami</h3>
+            <h3 class="fw-bolder">Sewa Mobil</h3>
         </div>
         <div class="row">
-            @forelse ($destinations as $destinasi)  
-            <div class="col-lg-3 col-md-6 col-sm-6 col-6 wow fadeIn" data-wow-delay="0.2s"  data-wow-duration="2s">
+            @forelse ($mobils as $mobil)  
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-4 wow fadeIn" data-wow-delay="0.2s"  data-wow-duration="2s">
                 <div class="icon-bx-wraper sr-iconbox m-b20">
                     <div class="icon-lg mb-1">
                         <a href="javascript:void(0);" class="icon-cell">
-                            <img class="rounded lozad" data-placeholder-background="white" data-src="{{$destinasi->foto != null ? asset($destinasi->foto) : 'https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'}}" alt=""/>
+                            <img class="rounded lozad" data-placeholder-background="white" data-src="{{$mobil->foto != null ? asset($mobil->foto) : 'https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'}}" alt=""/>
                         </a>
                     </div>
                     <div class="icon-content text-start">
                         <p class="mb-3">
 
-                            <i class="ti-map-alt"></i> {{$destinasi->nama}}
+                            <i class="ti-map-alt"></i> {{$mobil->nama}}
                         </p>
                         
-                        <a href="{{route('layananSubDetail',$destinasi->link)}}" class="btn btn-outline-primary btn-sm">Lihat Selengkapnya</a>
+                        <a href="{{route('layananSubDetail',$mobil->link)}}" class="btn btn-outline-primary btn-sm mt-3">Lihat Selengkapnya</a>
                     </div>
                 </div>
             </div>
