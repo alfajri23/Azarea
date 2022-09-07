@@ -31,7 +31,7 @@ class UserHomeController extends Controller
         $layanans = Layanan::all();
         $blogs = Blog::limit(3)->get(); 
         $testimonis = MasterTestimoni::limit(3)->get(); 
-        $destinations = LayananProgram::where('id_layanan',1)->get(); 
+        $destinations = LayananProgram::where('id_layanan',2)->limit(4)->get(); 
 
         return view('pages.home.user.home_travel',compact('destinations','layanans','blogs','logo','galeris','banners','testimonis'));
     }
