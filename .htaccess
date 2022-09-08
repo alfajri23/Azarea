@@ -4,6 +4,10 @@
     </IfModule>
 
     RewriteEngine On
+    
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L]
+    RewriteRule ^(\.env|\.env.example|\.gitignore|\.editorconfig|\.gitattributes)$ - [R=404,NC,L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
