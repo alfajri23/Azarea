@@ -10,7 +10,7 @@
 
 <div class="page-content bg-gray">
     
-    <div class="dlab-bnr-inr overlay-black-middle bg-primary" style="background-image:url(images/banner/bnr4.jpg);">
+    <div class="dlab-bnr-inr overlay-black-middle bg-info">
         <div class="container">
             <div class="dlab-bnr-inr-entry">
                 <h1 class="text-white">Tentang Kami</h1>

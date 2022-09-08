@@ -201,12 +201,12 @@
                         </a>
                     </li>
 
-                    <li>
+                    {{-- <li>
                         <a class="ai-icon" href="{{route('masterBanner')}}" aria-expanded="false">
                             <i class="la la-calendar"></i>
                             <span class="nav-text">Promo</span>
                         </a>
-                    </li>
+                    </li> --}}
 
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
                             <i class="la la-graduation-cap"></i>

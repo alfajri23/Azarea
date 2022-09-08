@@ -39,7 +39,6 @@ class InformasiController extends Controller
 
         $data = MasterInformasi::where('nama', 'like', '%Tentang Kami%')->first();
 
-
         return view('pages.informasi.term_condition',compact('data','title'));
     }
 
