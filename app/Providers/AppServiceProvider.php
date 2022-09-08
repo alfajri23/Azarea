@@ -33,7 +33,8 @@ class AppServiceProvider extends ServiceProvider
         config(['app.locale'=>'id']);
         Paginator::useBootstrap();
 
-        View()->composer('components.footer.footer', function ($view) {
+
+        View()->composer('components.footer.footer_user', function ($view) {
             $data = Cache::remember('footer_data', 7200, function () {
                 return $data = MasterKontak::first();
             });
@@ -43,9 +44,16 @@ class AppServiceProvider extends ServiceProvider
                 return $datas->foto;
             });
 
+            $layanans = Cache::remember('layanan', 14400, function () {
+                return Layanan::latest()->get();
+            });
+
+            //dd($layanans);
+
             $view->with([
                 'data' => $data,
-                'logo' => $logo
+                'logo' => $logo,
+                'layanans' => $layanans
             ]);
         });
 

@@ -19,7 +19,7 @@
 
 <div class="page-content bg-gray">
     <!-- inner page banner -->
-    <div class="dlab-bnr-inr overlay-black-middle bg-primary">
+    <div class="dlab-bnr-inr overlay-black-middle bg-info">
         <div class="container">
             <div class="dlab-bnr-inr-entry">
                 <h1 class="text-white">Blog</h1>

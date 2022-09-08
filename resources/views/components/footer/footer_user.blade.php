@@ -1,28 +1,69 @@
 <!-- Footer -->
-<footer class="site-footer footer-full" >
-  <div class="p-tb60 bg-success py-3">
-    <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col-md-4 text-center text-md-start footer-logo">
+<footer class="site-footer text-uppercase footer-dark">
+  <div class="footer-top bg-dark">
+    <div class="container saf-footer">
+      <div class="row">
+        <div class="col-md-6 col-lg-6 col-sm-6 footer-col-4">
+          <div class="widget widget_getintuch">
+            <h5 class="m-b30 ">{{$data->nama}}</h5>
+            <p>{{$data->desc}}</p>
+            {{-- <ul>
+              <li>
+                <i class="ti-location-pin"></i>
+                <strong>Alamat</strong>
+                {{$data->alamat}}
+              </li>
+              <li>
+                <i class="ti-mobile"></i>
+                <strong>Telepon</strong>
+                <a class="text-dark" href="https://api.whatsapp.com/send?phone=6285856561200">
+                  {{$data->telepon_1}} (24/7 Support Line)
+                </a>
+              </li>
+              <li>
+                <i class="ti-email"></i>
+                <strong>email</strong>
+                <a class="text-dark text-lowercase" href="mail:{{$data->email}}">{{$data->email}}</a>
+              </li>
+            </ul> --}}
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3 col-sm-6 footer-col-4 my-5 my-sm-0">
+          <div class="widget widget_services border-0">
+            <h5 class="m-b30">Bantuan</h5>
+            <ul>
+              <li><a href="{{route('about')}}">Tentang</a></li>
+              <li><a href="{{route('blogUser')}}">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3 col-sm-6 footer-col-4">
+          <div class="widget widget_services border-0">
+            <h5 class="m-b30">Layanan</h5>
+            <ul>
+              @forelse ($layanans as $layanan)
+              <li><a href="{{route('layananDetail',$layanan->link)}}">{{$layanan->nama}}</a></li>
+              @empty
+              @endforelse
+            </ul>
+          </div>
+        </div>
 
-          <img class="bg-white rounded-circle p-3" src="{{asset($logo)}}" alt="" width="140"/>
-        </div>
-        <div class="col-md-4  text-center">
-          <p class="max-w600 m-auto m-t10">Copyright © 2022 DexignZone</p>
-        </div>
-        <div class="col-md-4 text-center">
-          <ul class="list-inline m-a0">
-            <li><a href="{{$data->facebook}}" target="_blank" class="site-button white outline circle">
-              <i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li><a href="{{$data->ig}}" target="_blank" class="site-button white outline circle">
-              <i class="ti-instagram"></i></a>
-            </li>
-           
-          </ul>
-        </div>
+        
       </div>
     </div>
   </div>
+  <!-- footer bottom part -->
+  <div class="footer-bottom bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="text-center"> <span>Copyright © 2022 PT Bumi Tekno Indonesia</span> </div>
+        
+      </div>
+    </div>
+  </div>
+  
 </footer>
 <!-- Footer END -->

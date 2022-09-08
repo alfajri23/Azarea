@@ -70,7 +70,7 @@
   {{-- @include('components.floating_button.floating_button') --}}
 
 
-    @include('components.footer.footer')
+    @include('components.footer.footer_user')
 
 
     <script src="{{ asset('js/user/plugin.js') }}"></script>

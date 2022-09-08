@@ -43,7 +43,7 @@
 </div>
 
 {{-- Promo --}}
-<div class="section-full dlab-we-find bg-img-fix py-5 bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+{{-- <div class="section-full dlab-we-find bg-img-fix py-5 bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
     <div class="container">
         <div class="section-content">
             <div class="section-head text-center mt-0 mt-sm-4">
@@ -66,11 +66,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 
 <!-- Content Section -->
-<div class="section-full content-inner bg-white py-5">
+<div class="section-full content-inner bg-white py-5 mt-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12 m-b30 about-two align-self-start">
@@ -80,17 +80,22 @@
             </div>
             <div class="col-lg-6 m-b30 about-two">
                 <div class="section-head mb-4">
-                    <h3 class="fw-bolder">We make the best for all our Traveler customers.</h3>
+                    <h2 class="fw-bolder">Tentang Kami</h2>
                 </div>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoe et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc laboris nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .</p>
-                
+                <p>AZareatimur Tour dan travel, adalah salah satu Tour & Travel  resmi dan terpercaya di Bali. Kami menawarkan jasa travel ke berbagai pilihan rute yang dapat Anda pilih sesuai dengan tujuan Anda. Pelayanan kami mulai dari Paket wisata untuk perorangan, honeymoon, keluarga maupun rombongan, Sewa Mobil, Paket Outbound/Team Building/Family Gathering dan lain lain.</p>
+                {{-- <p>Dengan berbekal pengalaman di bidang pariwisata dan travel, kami hadir untuk melayani segala kebutuhan perjalanan wisata dan travel anda dengan kualitas pelayanan dan harga terbaik. Kami memiliki team dengan passion yang terbaik di bidang pariwisata, sehingga kepuasan costumer selalu menjadi prioritas dan tujuan utama kami.</p> --}}
+                <p>Banyak costumer yang telah membuktikan pelayanan terbaik kami, jadi tidak perlu ragu lagi untuk memilih kami sebagai partner liburan anda. selamat bergabung bersama AZareatimur Tour dan Travel.</p>
+
                 <div class="row g-4 mt-sm-5 mt-0">
                     <div class="col-6">
                         <span> 
                             <h6>
-                                <i class="ti-headphone-alt fs-3 me-2 text-primary"></i>
-                                <span>Customer Support 24/7</span> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-emoji-smile fs-3 me-2 text-primary" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                                </svg>                             
+                                <span class="fw-normal">Pelayanan Terbaik</span> 
                             </h6>
                         </span>
                     </div>
@@ -113,8 +118,12 @@
                     <div class="col-6">
                         <span> 
                             <h6>
-                                <i class="ti-headphone-alt fs-3  me-2 text-primary"></i>
-                                Customer Support 24/7
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check2-circle fs-3  me-2 text-primary" viewBox="0 0 16 16">
+                                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+                                </svg>
+                                {{-- <i class="ti-headphone-alt fs-3  me-2 text-primary"></i> --}}
+                                Resmi dan Terpercaya
                             </h6>
                         </span>
                     </div>
@@ -129,7 +138,7 @@
 <div id="paket" class="section-full bg-white content-inner-1 text-center py-5">
     <div class="container">
         <div class="section-head kinder-head">
-            <h3 class="fw-bolder">Paket Kami</h3>
+            <h3 class="fw-bolder">Paket Wisata</h3>
         </div>
         <div class="row">
             @forelse ($destinations as $destinasi)  
@@ -177,8 +186,9 @@
         </div>
       <div class="col-sm-5 col-11 wow fadeIn text-end text-sm-start" data-wow-delay="0.2s"  data-wow-duration="2s">
         <div class="section-head kinder-head my-5">
-            <h2 class="text-white mb-3">Find the Best Car
-                to Your Travel</h2>
+            <h2 class="text-white mb-3">
+                Sewa Mobil mulai dari Rp.400Rb
+            </h2>
             <a href="{{route('layananDetail',$layanans[0]->link)}}" class="btn btn-primary">Pesan sekarang</a>
         </div>
       </div>
@@ -190,7 +200,7 @@
 <div class="section-full content-inner bg-gray py-5 mt-4">
     <div class="container mt-5">
       <div class="section-head text-black text-center">
-        <h3 class="title">What we over</h3>
+        <h3 class="title">Pelayanan Terbaik Kami</h3>
       </div>
     </div>
 
@@ -200,8 +210,8 @@
                 <div class="features-box style1 m-b30 wow bounceInUp border mx-auto text-dark" data-wow-duration="2s" data-wow-delay="0.3s">
                     <div class="dlab-info text-start">
                         <i class="text-primary ti-car"></i><br>
-                        <span class="fw-bolder">Good Transport</span>
-                        <p class="">Hallo</p>
+                        <span class="fw-bolder">Transportasi Nyaman</span>
+                        <p class=""></p>
                     </div>
                   </div>
             </div>
@@ -214,7 +224,7 @@
                             <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
                         </svg>
                       <br>
-                      <span class="fw-bolder">Good Tour Guide</span>
+                      <span class="fw-bolder">Pemandu Wisata Terbaik</span>
                       <p class="">Hallo</p>
                     </div>
                   </div>
@@ -230,7 +240,7 @@
                         </svg>
                         
                         <br>
-                        <span class="fw-bolder">Good Food</span>
+                        <span class="fw-bolder">Makanan Lezat</span>
                         <p class="">Hallo</p>
                     </div>
                   </div>
@@ -240,7 +250,7 @@
                 <div class="features-box style1 m-b30 wow bounceInUp border mx-auto text-dark" data-wow-duration="2s" data-wow-delay="0.3s"">
                     <div class="dlab-info text-start">
                         <i class="text-primary ti-plus"></i><br>
-                        <span class="fw-bolder">Good Medic</span>
+                        <span class="fw-bolder">P3K lengkap</span>
                         <p class="">Hallo</p>
                     </div>
                   </div>
