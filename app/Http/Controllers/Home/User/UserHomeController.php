@@ -30,7 +30,7 @@ class UserHomeController extends Controller
         $banners = MasterBanner::limit(10)->get();
         $layanans = Layanan::all();
         $blogs = Blog::limit(3)->get(); 
-        $testimonis = MasterTestimoni::limit(3)->get(); 
+        $testimonis = MasterTestimoni::limit(5)->get(); 
         $destinations = LayananProgram::where('id_layanan',2)->limit(4)->get(); 
         $mobils = LayananProgram::where('id_layanan',1)->limit(4)->get(); 
 
