@@ -375,7 +375,7 @@
                 <div class="blog-post blog-grid blog-rounded blog-effect1">
                     <div class="dlab-post-media dlab-img-effect"> 
                         <a href="{{route('blogDetailUser',['id' => $blog->id , 'link' => $blog->link])}}">
-                            <img class="lozad" data-placeholder-background="white" data-src="{{asset($blog->poster)}}" alt="">
+                            <img class="lozad" data-placeholder-background="white" data-src="{{asset($blog->gambar)}}" alt="">
                         </a> 
                     </div>
                     <div class="p-a20 bg-gray">
