@@ -381,11 +381,7 @@
                     <div class="p-a20 bg-gray">
                         <div class="dlab-post-title">
                             <h4 class="post-title"><a href="{{route('blogDetailUser',['id' => $blog->id , 'link' => $blog->link])}}">{{$blog->judul}}</a></h4>
-                        </div>
-                        <div class="dlab-post-text">
-                            <p>{{$blog->meta_description}}</p>
-                        </div>
-                        
+                        </div> 
                     </div>
                 </div>						
             </div>
