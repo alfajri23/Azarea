@@ -3,8 +3,8 @@
   <div class="footer-top bg-dark">
     <div class="container saf-footer">
       <div class="row">
-        <div class="col-md-6 col-lg-6 col-sm-6 footer-col-4">
-          <div class="widget widget_getintuch">
+        <div class="col-md-6 col-lg-6 col-sm-6 footer-col-4 pe-sm-5 p-0">
+          <div class="widget widget_getintuch pe-sm-5 p-0">
             <h5 class="m-b30 ">{{$data->nama}}</h5>
             <div  class="fs-6 text-capitalize">
               {{$data->desc}}
