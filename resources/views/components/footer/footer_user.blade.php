@@ -6,7 +6,10 @@
         <div class="col-md-6 col-lg-6 col-sm-6 footer-col-4">
           <div class="widget widget_getintuch">
             <h5 class="m-b30 ">{{$data->nama}}</h5>
-            <p>{{$data->desc}}</p>
+            <div  class="fs-6 text-capitalize">
+              {{$data->desc}}
+            </div>
+            
             {{-- <ul>
               <li>
                 <i class="ti-location-pin"></i>
