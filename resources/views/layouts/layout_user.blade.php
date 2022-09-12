@@ -48,7 +48,6 @@
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef"/>
     <link rel="apple-touch-icon" sizes="16x16" href="{{ asset('logo.png') }}">
-    <link rel="manifest" href="{{ asset('manifest.json') }}">
 
   </head>
 
@@ -67,7 +66,7 @@
     {{-- </div>
   </div> --}}
 
-  {{-- @include('components.floating_button.floating_button') --}}
+  @include('components.floating_button.floating_button')
 
 
     @include('components.footer.footer_user')
@@ -101,14 +100,6 @@
         //End number
     </script>
 
-    <script src="{{ asset('sw.js') }}"></script>
-    <script>
-        if (!navigator.serviceWorker.controller) {
-            navigator.serviceWorker.register("{{ asset('sw.js') }}").then(function (reg) {
-                console.log("Service worker has been registered for scope: " + reg.scope);
-            });
-        }
-    </script>
     
 </body>
 

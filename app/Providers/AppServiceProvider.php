@@ -48,7 +48,6 @@ class AppServiceProvider extends ServiceProvider
                 return Layanan::latest()->get();
             });
 
-            //dd($layanans);
 
             $view->with([
                 'data' => $data,
@@ -83,7 +82,8 @@ class AppServiceProvider extends ServiceProvider
 
         View()->composer('components.floating_button.floating_button', function ($view) {
             $data = MasterKontak::first();
-            $data = Telepon::changeTo62($data);
+           
+            $data = Telepon::changeTo62($data->telepon_3);
             $view->with('data', $data);
         });
 

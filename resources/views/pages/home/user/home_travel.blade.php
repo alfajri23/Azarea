@@ -30,7 +30,7 @@
         <div class="row pe-3">
             <div class="col-lg-6 col-md-12 col-sm-12 col-12 wow fadeIn" data-wow-delay="0.2s"  data-wow-duration="2s">
               <div class="section-head kinder-head">
-                <h2 class="head-title text-white mb-3">Life is short and the world is wide</h2>
+                <h2 class="head-title text-white mb-3">Life is Short and the World is Wide</h2>
                 <p class="text-white">Nikmati petualangan terhebatmu dan jelajahi seluruh indonesia bersama kami sekarang juga </p>
                 <div>
                     <a href="#paket" type="button" class="btn text-white" style="background-color: #E38B68">Explore More</a>
