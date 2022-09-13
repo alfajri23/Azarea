@@ -169,13 +169,3 @@ Route::middleware(['admin'])->prefix('admin')->group(function () {
 
 });
 
-
-Route::get('/ganti-telepon', function(){
-    $datas = LayananProgram::all();
-
-    foreach ($datas as $data){
-        $data->link_tombol = 'https://wa.me/+6282137438888';
-        $data->save();
-    }
-
-});
