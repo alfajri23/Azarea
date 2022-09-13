@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers;
+use App\Models\LayananProgram;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
@@ -169,4 +170,12 @@ Route::middleware(['admin'])->prefix('admin')->group(function () {
 });
 
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/ganti-telepon', function(){
+    $datas = LayananProgram::all();
+
+    foreach ($datas as $data){
+        $data->link_tombol = 'https://wa.me/+6282137438888';
+        $data->save();
+    }
+
+});
