@@ -48,16 +48,16 @@ class LayananController extends Controller
         foreach ($datas as $data){
             $sub = LayananProgram::find($data->id);
            
-            $sub->forceDelete();
+            $sub->delete();
         }
 
-        $layanan->forceDelete();
+        $layanan->delete();
 
         return redirect()->back();
     }
 
     public function delete($id) {
-        $data = LayananProgram::find($id)->forceDelete();
+        $data = LayananProgram::find($id)->delete();
 
         return redirect()->back();
     }
