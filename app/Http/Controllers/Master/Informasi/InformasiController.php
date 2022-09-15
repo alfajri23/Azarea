@@ -35,7 +35,7 @@ class InformasiController extends Controller
     }
 
     public function about(){
-        $title = 'Tentang kami - halobahagia.com';
+        $title = 'Tentang kami - azareatimur.com';
 
         $data = MasterInformasi::where('nama', 'like', '%Tentang Kami%')->first();
 
