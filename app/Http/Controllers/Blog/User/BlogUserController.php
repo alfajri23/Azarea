@@ -12,7 +12,7 @@ class BlogUserController extends Controller
 {
 
     public function index(Request $request){
-        $title = 'Blog - halobahagia.com';
+        $title = 'Blog - azareatimur.com';
         $populars = Blog::limit(3)->orderBy('pengunjung','desc')->get();
         $kategories = BlogKategori::all();
 
@@ -26,7 +26,7 @@ class BlogUserController extends Controller
     }
 
     public function detail($id,$link= null){
-        $title = 'Detail Blog - halobahagia.com';
+        $title = 'Detail Blog - azareatimur.com';
         $blog = Blog::find($id);
         $blog->update(['pengunjung' => $blog->pengunjung + 1]);
         $populars = Blog::inRandomOrder()->where('id_kategori',$blog->id_kategori)->limit(6)->get();
@@ -35,7 +35,7 @@ class BlogUserController extends Controller
     }
 
     public function filterByCategory(Request $request){
-        $title = 'Blog - halobahagia.com';
+        $title = 'Blog - azareatimur.com';
         $blogs = Blog::where('id_kategori',$request->kategori)->paginate(6);
         $populars = Blog::limit(3)->orderBy('pengunjung','desc')->get();
         $kategories = BlogKategori::all();
