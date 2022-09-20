@@ -43,6 +43,7 @@
         </div>
         
         <div class="col-md-6 col-lg-3 col-sm-6 footer-col-4">
+          
           <div class="widget widget_services border-0">
             <h5 class="m-b30">Layanan</h5>
             <ul>
@@ -51,6 +52,13 @@
               @empty
               @endforelse
             </ul>
+          </div>
+
+          <div class="widget widget_services border-0">
+            <h5 class="m-b30">Metode Pembayaran</h5>
+            <div>
+              <img src="{{asset('images/home/bank.png')}}" alt="" srcset="">
+            </div>
           </div>
         </div>
 
