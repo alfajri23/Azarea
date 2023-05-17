@@ -16,16 +16,19 @@
     @media only screen and (max-width: 600px) {
         .background-banner{
             height: 70vh;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            background-size: cover !important;
         }
     }
 </style>
 
-<div class="section-full bg-white background-banner kinder-about-content lozad" 
+<div class="section-full bg-white background-banner kinder-about-content lozad d-flex align-items-center" 
     data-background-image="{{asset('images/banner/banner_travel_1.png')}}"
     data-placeholder-background="white">
     <div class="overlay-background"></div>
   
-    <div class="container position-absolute" style="top:30%;left: 10%;">
+    <div class="container w-75">
 
         <div class="row pe-3">
             <div class="col-lg-6 col-md-12 col-sm-12 col-12 wow fadeIn" data-wow-delay="0.2s"  data-wow-duration="2s">
