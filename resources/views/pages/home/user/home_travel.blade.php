@@ -4,8 +4,9 @@
 <style>
     .background-banner{
         height: 95vh;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: cover !important;
     }
 
     .paralax-fix{
