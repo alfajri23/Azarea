@@ -397,6 +397,9 @@
     </div>
 </div>
 
+<!-- GALERI -->
+@include('components.galeri.galeri_2')
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 <script>
     const observer = lozad(); // lazy loads elements with default selector as '.lozad'

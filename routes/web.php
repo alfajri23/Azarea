@@ -31,7 +31,7 @@ Route::get('/', [Controllers\Home\User\UserHomeController::class, 'index'])->nam
 Route::get('/tentang-kami', [ Controllers\Master\Informasi\InformasiController::class,'about'])->name('about');
 
 //* Galeri
-Route::get('/galeri', [ Controllers\Dokumentasi\User\DokumentasiUserController::class,'index'])->name('galeri');
+Route::get('/galeri', [ Controllers\Galeri\User\GaleriUserController::class,'index'])->name('galeri');
 
 //* kontak
 Route::get('/kontak', [ Controllers\Kontak\User\KontakUserController::class,'index'])->name('kontak');
