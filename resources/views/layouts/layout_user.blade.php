@@ -71,7 +71,7 @@
 
     @include('components.footer.footer_user')
 
-
+    @yield('script')
     <script src="{{ asset('js/user/plugin.js') }}"></script>
     <script src="{{ asset('js/user/aos.min.js') }}"></script>
     <script src="{{ asset('js/user/scripts.js') }}"></script>
