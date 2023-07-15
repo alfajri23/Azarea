@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>{{isset($title) ? $title : 'Azariatimur';}}</title>
+    <title>{{isset($title) ? $title : 'Azareatimur';}}</title>
 
     <!-- Additional CSS Files -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">

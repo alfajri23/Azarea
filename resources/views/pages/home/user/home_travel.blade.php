@@ -319,7 +319,7 @@
             @endforelse
             <div class="text-center">
                 <p>
-                    <a class="text-primary" style="cursor: pointer;" href="{{route('layananDetail',$layanans[1]->link)}}">
+                    <a class="text-primary" style="cursor: pointer;" href="{{route('layananDetail',$layanans[0]->link)}}">
                         Lihat selengkapnya
                     </a>
                     
